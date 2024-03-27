@@ -1,0 +1,23 @@
+{
+  "name": "hokify-technical-challange",
+  "version": "1.0.0",
+  "description": "A simple Node.js server deployed with Docker on AWS",
+  "main": "nodejs.ts",
+  "scripts": {
+    "start": "node nodejs.ts",
+    "test": "echo \"No tests specified\"",
+    "lint": "eslint .",
+    "prettier": "prettier --write ."
+  },
+  "author": "Eszter Bolla",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "eslint": "^8.2.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.5"
+  }
+}
