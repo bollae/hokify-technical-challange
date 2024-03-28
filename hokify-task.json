@@ -16,7 +16,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/hokify",
+          "awslogs-group": "hokify-logs",
           "awslogs-region": "us-east-2",
           "awslogs-stream-prefix": "hokify"
         }
