@@ -42,7 +42,7 @@ jobs:
     - name: Deploy to Amazon ECS
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
-        task-definition: hokify-task
+        task-definition: .github/workflows/hokify-task
         service: hokify-service1
         cluster: hokify
         wait-for-service-stability: 'true'
