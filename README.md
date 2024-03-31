@@ -69,6 +69,18 @@ The ECS task definition describes how your container should run within the ECS c
 - **Port Mapping**: Exposes port 8080
 - **Logging Configuration**: Sends logs to CloudWatch Logs
 
+## Application Load Balancer (ALB)
+
+- **ALB Name**: hokify lb
+- **Address**: [http://hokify-lb-184354042.us-east-2.elb.amazonaws.com/](http://hokify-lb-184354042.us-east-2.elb.amazonaws.com/)
+- **Listen Port**: 80
+- **Target Group**: ecs-hokify-hokify-service1
+- **ECS Service Name**: hokify-service
+
+### Load Balancer Configuration
+
+The Application Load Balancer (ALB) named **hokify lb** is configured to listen on port 80. It forwards incoming traffic to a target group named **ecs-hokify-hokify-service1**, which points to the ECS Fargate cluster service named **hokify-service**.
+
 ## Deployment Process
 
 1. Push changes to the `main` branch.
