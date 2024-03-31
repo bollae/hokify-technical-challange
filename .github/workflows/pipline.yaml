@@ -43,7 +43,7 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: hokify-task.json
-        service: hokify-service1
+        service: hokify-service
         cluster: hokify
         wait-for-service-stability: 'true'
       env:
